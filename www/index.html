@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>homework</title>
+	<link rel="stylesheet" href="src/css/reset.css">
+	<link rel="stylesheet" href="src/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+</head>
+
+<body id="test">
+	<script type="text/html" id="wrapper-template">
+		<div class="wrapper">
+			<div class="wrap-list">
+				<ul class="item-list"></ul>
+				<div class="controls">
+					<input type="text" class="item-value" name="" value="">
+					<button type="button" class="item-add" name="button">Добавить</button>
+				</div>
+			</div>
+		</div>
+	</script>
+	<script type="text/html" id="item-template">
+		<% for (var i = 0; i < data.length; i++) { %>
+			<li  class="list-item"> <label data-id="<%= data[i] %>" > <%= data[i]%> </label>
+				 <span data-value="<%= data[i] %>" class="item-delete">x</span></li>
+			<%};%>
+	</script>
+
+	<script src='dist/js/bundle.js'>
+	</script>
+</body>
+
+</html>

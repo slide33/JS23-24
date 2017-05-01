@@ -1,0 +1,60 @@
+.wrapper {
+    width : 960px;
+    margin: 0 auto;
+}
+
+.wrap-list {
+    width           : 400px;
+    margin          : 0 auto;
+    border-radius   : 3px;
+    background-color: #6ccd9c;
+}
+.list-item{
+
+  border-bottom:  1px solid #fcfcfc;
+  padding: 0px 20px;
+  /*height: 40px;*/
+  line-height: 1.5;
+  vertical-align: middle;
+}
+label{
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.item-delete{
+  float: right;
+  font-size: 20px;
+  vertical-align: middle;
+  color: #dd6e67;
+  font-weight: bold;
+}
+
+.controls{
+  padding: 10px 20px;
+}
+.item-value{
+  border: none;
+  height: 40px;
+  width: 70%;
+}
+.item-value:focus{
+  outline: none;
+}
+.item-add{
+  background-color: #fff;
+  border: none;
+  height: 40px;
+
+}
+.editing{
+  display: none;
+}
+.edit{
+height: 40px;
+border: none;
+box-sizing: border-box;
+}
+.edit:focus{
+  outline: none;
+}
